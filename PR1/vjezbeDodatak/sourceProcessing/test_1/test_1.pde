@@ -5,7 +5,7 @@ void setup() {
   size(860, 444);
   smooth();
   stroke(255,0,255);
-  strokeWeight(1);
+  strokeWeight(10);
   rectX = width/2;
   rectY = height/2;
   
@@ -16,20 +16,11 @@ void setup() {
 void draw() {
   background(255);
   fill(boja);
-
-  iscrtajKockice();
+  //rectX+=0.5;
+  //rectY+=0.5;
+  rect(rectX, rectY, 150,50);
 }
 
-void iscrtajKockice()
-{
-  for (int i = 0; i < 5; i++)
-  {
-  for (int j = 0; j < 5; j++)
-  {
-    rect(j*25+50,i*25+50,10,10);
-  }
-  }
-}
 
 void mousePressed() {
   
